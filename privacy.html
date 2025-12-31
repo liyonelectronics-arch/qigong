@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 养生气功助手</title>
+    <style>
+        body {padding: 20px; line-height: 1.8; font-size: 16px; max-width: 800px; margin: 0 auto;}
+        h2 {color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+        .lang-switch {margin-bottom: 20px;}
+        .lang-switch button {padding: 8px 15px; margin-right: 10px; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button onclick="switchLang('zh')">中文</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <div id="zh-content" style="display: block;">
+        <h2>隐私政策</h2>
+        <p>生效日期：2025年12月31日</p>
+        <h3>1. 信息收集与使用</h3>
+        <p>养生气功助手（Qigong Wellness Assistant）遵循“最小必要”原则，不主动收集任何个人信息（姓名、手机号、地理位置等）。练习记录、时长设置等数据仅存储在你的设备本地，不会上传至服务器。</p>
+        <h3>2. 数据存储与保护</h3>
+        <p>所有数据均存储在你的设备本地，本应用无权限访问/修改；卸载应用可彻底删除本地数据。</p>
+        <h3>3. 第三方服务</h3>
+        <p>本应用未接入任何第三方SDK、广告插件，不共享你的数据。</p>
+        <h3>4. 联系我们</h3>
+        <p>邮箱：<strong>你的邮箱@xxx.com</strong></p>
+    </div>
+
+    <div id="en-content" style="display: none;">
+        <h2>Privacy Policy</h2>
+        <p>Effective Date: December 31, 2025</p>
+        <h3>1. Information Collection and Use</h3>
+        <p>Qigong Wellness Assistant adheres to the "minimum necessary" principle and does not collect personal information (name, phone number, location, etc.). Practice records are stored locally on your device and will not be uploaded.</p>
+        <h3>2. Data Storage and Protection</h3>
+        <p>All data is stored locally; the App has no access to it. Uninstall the App to delete all local data.</p>
+        <h3>3. Third-Party Services</h3>
+        <p>No third-party SDKs or ads are integrated; your data is not shared.</p>
+        <h3>4. Contact Us</h3>
+        <p>Email: <strong>liyonelectronics@gmail.com</strong></p>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('zh-content').style.display = lang === 'zh' ? 'block' : 'none';
+            document.getElementById('en-content').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

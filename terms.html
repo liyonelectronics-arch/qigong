@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务条款 - 养生气功助手</title>
+    <style>
+        body {padding: 20px; line-height: 1.8; font-size: 16px; max-width: 800px; margin: 0 auto;}
+        h2 {color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+        .lang-switch {margin-bottom: 20px;}
+        .lang-switch button {padding: 8px 15px; margin-right: 10px; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button onclick="switchLang('zh')">中文</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <div id="zh-content" style="display: block;">
+        <h2>服务条款</h2>
+        <p>生效日期：2025年12月31日</p>
+        <h3>1. 服务内容</h3>
+        <p>本应用提供免费气功教程、智能计时、背景音乐等服务；高级订阅（Basic 1.99USD/月、Premium 2.99USD/月）遵循Google Play规则。</p>
+        <h3>2. 用户规则</h3>
+        <p>禁止传播违法内容，违者停止服务；订阅自动续订，可在Google Play“我的-订阅”中取消。</p>
+        <h3>3. 免责声明</h3>
+        <p>本应用仅提供练习指导，不构成医疗建议；不当练习导致不适，本应用不承担责任。</p>
+        <h3>4. 联系我们</h3>
+        <p>邮箱：<strong>你的邮箱@liyonelectronics@gmail.com</strong></p>
+    </div>
+
+    <div id="en-content" style="display: none;">
+        <h2>Terms of Service</h2>
+        <p>Effective Date: December 31, 2025</p>
+        <h3>1. Service Content</h3>
+        <p>Free qigong tutorials, smart timing, background music; premium subscriptions (Basic 1.99USD/month, Premium 2.99USD/month) follow Google Play rules.</p>
+        <h3>2. User Rules</h3>
+        <p>Illegal content is prohibited; subscriptions auto-renew, cancel in Google Play "My - Subscriptions".</p>
+        <h3>3. Disclaimer</h3>
+        <p>The App provides practice guidance only, not medical advice; no liability for discomfort from improper practice.</p>
+        <h3>4. Contact Us</h3>
+        <p>Email: <strong>your-email@xxx.com</strong></p>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('zh-content').style.display = lang === 'zh' ? 'block' : 'none';
+            document.getElementById('en-content').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
